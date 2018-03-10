@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_control"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/connection_state"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Connection state" />
+
+    <Button
+        android:id="@+id/highSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3档"/>
+
+    <Button
+        android:id="@+id/midSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2档"/>
+    <Button
+        android:id="@+id/lowSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1档"/>
+
+    <Button
+        android:id="@+id/stopSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="停止"/>
+    <Button
+        android:id="@+id/backSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="倒档"/>
+    <LinearLayout  android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="@dimen/activity_horizontal_margin">
+            <Button
+                android:id="@+id/leftLargeSteer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="左转"/>
+
+            <Button
+                android:id="@+id/leftSmallSteer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="左转1/2"/>
+            <Button
+                android:id="@+id/rightSmallSteer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="右转1/2"/>
+
+            <Button
+                android:id="@+id/rightLargeSteer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="右转"/>
+        </LinearLayout>
+    <!--RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_horizontal_margin">
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop"
+            android:layout_alignParentLeft="true"/>
+
+        <Button
+            android:id="@+id/maxSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MaxSpeed"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout-->
+
+    <!--TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speed" />
+
+    <com.giovanniterlingen.hc05.VerticalSeekBar
+        android:id="@+id/speed_seekbar"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        style="@style/CustomSeekbarStyle"
+        android:splitTrack="false"
+        android:max="14"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="Direction" />
+
+    <SeekBar
+        android:id="@+id/direction_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/CustomSeekbarStyle"
+        android:splitTrack="false"
+        android:max="18"/>
+
+    <Button
+        android:id="@+id/middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="M"
+        android:paddingTop="@dimen/activity_horizontal_margin"/-->
+
+    <!--RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/activity_horizontal_margin">
+
+        <Button
+            android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="L"
+            android:layout_alignParentLeft="true"/>
+
+        <Button
+            android:id="@+id/middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M"
+            android:layout_centerInParent="true"/>
+
+        <Button
+            android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout-->
+
+</LinearLayout>

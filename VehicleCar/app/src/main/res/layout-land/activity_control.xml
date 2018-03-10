@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/activity_control"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/connection_state"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="Connection state" />
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/leftLargeSteer"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:layout_margin="5dp"
+            android:background="@android:color/holo_orange_light"
+            android:textColor="@android:color/black"
+            android:text="左转"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/midSpeed"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="4"
+                    android:background="@android:color/holo_blue_bright"
+                    android:textColor="@android:color/black"
+                    android:text="2档"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="3"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="vertical">
+                    <Button
+                        android:id="@+id/stopSpeed"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:color/holo_red_light"
+                        android:text="停止"/>
+                    <Button
+                        android:id="@+id/backSpeed"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@android:color/holo_green_light"
+                        android:textColor="@android:color/black"
+                        android:text="倒档"/>
+                    <Button
+                        android:id="@+id/highSpeed"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/holo_blue_bright"
+                        android:textColor="@android:color/black"
+                        android:text="3档"/>
+                </LinearLayout>
+                <Button
+                    android:id="@+id/lowSpeed"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="4"
+                    android:background="@android:color/holo_blue_bright"
+                    android:textColor="@android:color/black"
+                    android:text="1档"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/leftSmallSteer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="5dp"
+                    android:background="@android:color/holo_orange_light"
+                    android:textColor="@android:color/black"
+                    android:text="左转1/2"/>
+
+                <Button
+                    android:id="@+id/rightSmallSteer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="5dp"
+                    android:background="@android:color/holo_orange_light"
+                    android:textColor="@android:color/black"
+                    android:text="右转1/2"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/rightLargeSteer"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:layout_margin="5dp"
+            android:background="@android:color/holo_orange_light"
+            android:textColor="@android:color/black"
+            android:text="右转"/>
+    </LinearLayout>
+    <!--RelativeLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="horizontal">
+        <Button
+            android:id="@+id/leftLargeSteer"
+            android:layout_width="@dimen/land_button_width"
+            android:layout_height="fill_parent"
+            android:paddingLeft="15dp"
+            android:layout_alignParentLeft="true"
+            android:text="左转"/>
+        <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+        <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:gravity="center"
+                  android:layout_alignParentLeft="true">
+    <Button
+        android:id="@+id/highSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3档"/>
+
+    <Button
+        android:id="@+id/midSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2档"/>
+    <Button
+        android:id="@+id/lowSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1档"/>
+
+    <Button
+        android:id="@+id/stopSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="停止"/>
+    <Button
+        android:id="@+id/backSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="倒档"/>
+    </LinearLayout>
+
+        <RelativeLayout  android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+                         android:layout_centerHrizontal="true"
+                         android:gravity="center">
+
+                <Button
+                    android:id="@+id/leftSmallSteer"
+                    android:layout_width="@dimen/land_button_width"
+                    android:layout_height="@dimen/land_button_height"
+                    android:layout_alignParentLeft="true"
+                    android:text="左转1/2"/>
+                <Button
+                    android:id="@+id/rightSmallSteer"
+                    android:layout_width="@dimen/land_button_width"
+                    android:layout_height="@dimen/land_button_height"
+                    android:layout_alignParentRight="true"
+                    android:text="右转1/2"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <Button
+            android:id="@+id/rightLargeSteer"
+            android:layout_width="@dimen/land_button_width"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:paddingRight="5dp"
+            android:text="右转"/>
+    </RelativeLayout-->
+</LinearLayout>
